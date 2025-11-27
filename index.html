@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>[Your Name] Handyman — Repairs & Small Jobs</title>
+  <meta name="description" content="Local handyman offering repairs, painting, carpentry, installations, and general home maintenance." />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0b5fff" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "name":"[Your Name] Handyman",
+    "url":"https://example.github.io/your-repo",
+    "telephone":"[YOUR PHONE]",
+    "priceRange":"$",
+    "description":"Local handyman offering repairs, installations, painting, carpentry, and general home maintenance."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">[Your Name] Handyman</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="top-ctas">
+        <a class="phone" href="tel:[YOUR PHONE]">Call: [YOUR PHONE]</a>
+        <a class="book" href="[YOUR_CALENDLY_LINK]" target="_blank" rel="noopener">Book</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Reliable handyman services — fast response, fair prices</h1>
+        <p class="lead">Repairs, installations, painting, small remodels — serving [City] and nearby areas.</p>
+        <p class="hero-ctas">
+          <a class="cta" href="tel:[YOUR PHONE]">Call [YOUR PHONE]</a>
+          <a class="cta secondary" href="[YOUR_CALENDLY_LINK]" target="_blank" rel="noopener">Book an appointment</a>
+        </p>
+        <p class="trust">Find me on <a href="[YOUR-GMB-LINK]" target="_blank" rel="noopener">Google</a> and <a href="[YOUR-YELP-LINK]" target="_blank" rel="noopener">Yelp</a></p>
+      </div>
+    </section>
+
+    <section id="services" class="container cards">
+      <h2>Services I offer</h2>
+      <p class="muted">Common tasks I handle — contact me for anything else.</p>
+      <div class="card-grid">
+        <article class="card"><h3>General Repairs</h3><p>Doors, locks, drywall patching, shelves, trim.</p></article>
+        <article class="card"><h3>Plumbing fixes</h3><p>Faucet repairs, toilet adjustments, minor leak fixes.</p></article>
+        <article class="card"><h3>Electrical</h3><p>Light fixtures, switches, outlet replacements (non-permitted wiring).</p></article>
+        <article class="card"><h3>Painting</h3><p>Small interior touch-ups to whole-room repaints.</p></article>
+        <article class="card"><h3>Assembly & Install</h3><p>Appliance hookups, shelf & furniture assembly, TV mounts.</p></article>
+        <article class="card"><h3>Carpentry</h3><p>Trim, baseboards, small built-ins, repairs.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>I’m [Your Name]. I focus on honest, affordable handyman work with clear pricing when possible and reliable communication.</p>
+      <p><strong>Service area:</strong> [City and neighborhoods]. <strong>Hours:</strong> Mon–Sat, 8am–6pm (by appointment).</p>
+    </section>
+
+    <section id="testimonials" class="container testimonials">
+      <h2>What customers say</h2>
+      <blockquote>"Quick, professional, and fair — fixed my sink same day." — A. Customer</blockquote>
+      <blockquote>"Arrived on time, cleaned up after the job, and the price was right." — B. Client</blockquote>
+      <p class="muted">Add real reviews from Google/Yelp here to build trust.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact & Booking</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Phone:</strong> <a href="tel:[YOUR PHONE]">[YOUR PHONE]</a></p>
+          <p><strong>Email:</strong> <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a></p>
+          <p><strong>Google:</strong> <a href="[YOUR-GMB-LINK]" target="_blank" rel="noopener">Google My Business</a></p>
+          <p><strong>Yelp:</strong> <a href="[YOUR-YELP-LINK]" target="_blank" rel="noopener">Yelp</a></p>
+        </div>
+
+        <div>
+          <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <label>Your name<input type="text" name="name" required /></label>
+            <label>Phone or email<input type="text" name="contact" required /></label>
+            <label>Service required<input type="text" name="service" /></label>
+            <label>Message<textarea name="message" rows="4" required></textarea></label>
+            <button type="submit">Send request</button>
+            <p class="muted small">Or call: <a href="tel:[YOUR PHONE]">[YOUR PHONE]</a></p>
+          </form>
+        </div>
+      </div>
+      <p class="muted">Tip: if you host on Netlify, use Netlify Forms instead (see README).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> [Your Name] Handyman</p>
+      <p class="small">Built to be simple and fast — deploy on GitHub Pages or Netlify for free.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
